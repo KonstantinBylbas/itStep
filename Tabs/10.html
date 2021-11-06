@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Content/style.css">
+    <link rel="shortcut icon" href="../Content/Pictures/favicon.ico" type="image/x-icon">
+    <script src="../Scripts/script.js"></script>
+
+    <style>
+       .gallery{
+           position: relative;
+           margin: auto;
+           height: 50vh;
+           width: 1000px;
+       }
+       .gallery img{
+           height: 220px;
+           width: 400px;
+           border: solid 2px;
+           box-shadow: 5px 5px 10px;
+
+           position: absolute;
+           top: 30px;
+           left: 30px;
+
+           transform: rotate3d(0, 1, 0, 85deg);
+       }
+       .gallery img:hover{
+           cursor: pointer;
+           transition: 2s;
+           z-index: 10;
+           margin-top: 20px;
+           margin-left: 100px;
+           height: 270px;
+           width: 500px;
+            transform: rotate3d(0, 1, 0, 0deg);
+       }
+       .gallery img:nth-child(2){
+           top: 50px;
+           left: 50px;
+       }
+       .gallery img:nth-child(3){
+           top: 70px;
+           left: 70px;
+       }
+       .gallery img:nth-child(4){
+           top: 90px;
+           left: 90px;
+       }
+    </style>
+
+    <title>Bylbas</title>
+</head>
+
+<script>
+</script>
+
+<body id="load" onload="loadPage()">
+    <div class="gallery">
+        <img src="../Content/Pictures/Civic.jpg">
+        <img src="../Content/Pictures/Golf.jpg">
+        <img src="../Content/Pictures/BMW.jpg">
+        <img src="../Content/Pictures/TT.jpg">
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <hr>
+            </td>
+        </tr>
+            <td align="right">
+                <div class="button"><a href="../index.html">&lArr; Back To Main</a></div>
+            </td>
+    </table>
+</body>
+
+</html>

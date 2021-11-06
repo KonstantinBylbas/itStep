@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body{
+    height: 500vh;
+}
+.phone{
+    position: fixed;
+    margin: 20px;
+    width: max-content;
+    border: solid 2px;
+    border-radius: 1rem;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #3f4d7a;
+    cursor: pointer;
+}
+.phone img{
+    display: inline-block;
+    width: 30px;
+    margin: 3px;
+}
+
+.phone::after{
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    left: -8px;
+    top: -8px;
+    width: 48px;
+    height: 48px;
+    border: solid 2px;
+    border-radius: 20px;
+
+    animation: pulse 0.2s ease-in-out infinite;
+}
+
+.phone:hover{
+    transition: 2s;
+    transform: rotate(45deg);
+}
+
+@keyframes pulse{
+    0%{
+        left: -8px;
+        top: -8px;
+        width: 48px;
+        height: 48px;
+    }
+    50%{
+        left: -12px;
+        top: -12px;
+        width: 56px;
+        height: 56px;
+    }
+    100%{
+        left: -8px;
+        top: -8px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.tableBlock{
+    margin: 30px auto;
+    border-radius: 20px;
+    width: max-content;
+}
+table{
+    border-collapse: collapse;
+    font-size: 14pt;
+}
+table tr:first-child, table tr:nth-child(2), table tr:nth-child(3){
+    color: #eee;
+    font-weight: 600;
+}
+table td{
+    padding: 10px;
+}
+.head1{
+    background-color: #86a3ff;
+}
+.head2{
+    background-color: #6083f8;
+}
+.head3{
+    background-color: #335eee;
+}
+.head4{
+    background-color: #1f45c2;
+}
+.head5{
+    background-color: #0b2a8f;
+}
+.body1{
+    background-color: #ffc4b6;
+}
+.body2{
+    background-color: #ffebe7;
+} */
+
+body{
+    margin: 0;
+}
+header{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(148, 61, 26);
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.logo{
+    cursor: pointer;
+    display: block;
+    color: #eeeeee;
+    font-size: 20pt;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 20px;
+    float: left;
+}
+
+
+
+nav{
+    display: flex;
+    color: #eeeeee;
+    font-size: 15pt;
+}
+nav ul{
+    width: 110px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    list-style: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+nav ul li, nav ul li ul{
+    position: relative;
+    width: 110px;
+    margin: 0 0 0 -20px;
+    padding: 0 20px;
+    display: none;
+}
+nav ul:hover li, nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul{
+    background-color: rgb(95, 42, 22);
+    top: 0;
+    left: calc(100% + 20px);
+    position: absolute;
+}
+nav ul:hover{
+    background-color: rgb(112, 49, 24);
+}
+nav ul li:hover{
+    background-color: rgb(95, 42, 22);
+}
+nav ul li ul:hover{
+    background-color: rgb(95, 42, 22);
+}
+nav ul li ul li:hover{
+    background-color: rgb(61, 28, 16);
+}
+
+
+
+.block0, .block1, .gallery{
+    float: left;
+    display: block;
+}
+.block0{
+    width: 800px;
+}
+.block1{
+    width: 400px;
+}
+.content{
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 25px;
+    width: 300px;
+    background-color: rgb(200, 200, 200);
+}
+.content img{
+    border-radius: 5px;
+    width: 250px;
+}
+.gallery{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 3px;
+}
+.gallery img{
+    margin: 42px;
+    width: 200px;
+}
+    </style>
+
+    <title>Document</title>
+
+    <!-- <style>
+        .container{
+            margin: auto;
+            width: 500px;
+            border: solid 1px;
+            padding: 20px;
+        }
+        .box{
+            border: solid red 2px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .phoneContainer{
+            height: 550px;
+            width: 350px;
+            padding: 7px;
+            border: solid 3px rgb(28, 77, 28);
+            border-radius: 30px;
+            background-color: black;
+        }
+        .phoneBox{
+            position: relative;
+            height: 530px;
+            width: 330px;
+            border: solid 1px;
+            border-radius: 20px;
+            background-image: url(./colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .camera{
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(149, 149, 149);
+            margin: auto;
+            margin-top: 10px;
+        }
+        .battery{
+            display: inline-block;
+            width: 25px;
+            height: 12px;
+            line-height: 12px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 6pt;
+            font-weight: 600;
+            color: rgb(212, 212, 212);
+            border: solid 1px rgb(212, 212, 212);
+            border-radius: 30px;
+
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,0) 31%, rgba(148, 148, 148,0.3) 31%, rgba(148,148,148,0.5) 100%);
+        }
+        .time{
+            position: absolute;
+            font-size: 40pt;
+            top: 50px;
+            left: 10px;
+            color: rgb(212, 212, 212);
+        }
+        .date{
+            color: rgb(212, 212, 212);
+            position: absolute;
+            top: 110px;
+            left: 17px;
+        }
+        .photo{
+            position: absolute;
+            width: 25px;
+            bottom: 8px;
+            right: 8px;
+            filter: invert();
+        }
+        .photo:hover{
+            cursor: pointer;
+            transform: scale(120%);
+        }
+        .slide{
+            color: rgb(212, 212, 212);
+            position: absolute;
+            width: 330px;
+            text-align: center;
+            bottom: 10px;
+        }
+        /* .slide:hover{
+            transition: margin-top 1s;
+        } */
+        .circle{
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background-color: rgb(212, 212, 212);
+            z-index: 1;
+        }
+        .circle::before{
+            content: '';
+
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: solid 2px rgb(212, 212, 212);
+            border-radius: 50%;
+
+            position: absolute;
+            left: -5px;
+            top: -5px;
+        }
+        .circle:hover{
+            cursor: pointer;
+            transform: scale(120%);
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <div class="phone">
+        <img src="./iconfinder_phone-call_2561306.svg">
+    </div>
+
+    <div class="tableBlock">
+        <table>
+            <tr>
+                <td rowspan="3" class="head1">Choose your plan</td>
+                <td class="head2">starter</td>
+                <td class="head3">econom</td>
+                <td class="head4">standart</td>
+                <td class="head5">econom</td>
+            </tr>
+            <tr>
+                <td class="head2">$10</td>
+                <td class="head3">econom</td>
+                <td class="head4">standart</td>
+                <td class="head5">econom</td>
+            </tr>
+            <tr>
+                <td class="head2">per month</td>
+                <td class="head3">econom</td>
+                <td class="head4">standart</td>
+                <td class="head5">econom</td>
+            </tr>
+            <tr>
+                <td class="body1">Amount of space</td>
+                <td class="body2">20Gb</td>
+                <td class="body1">50Gb</td>
+                <td class="body2">30Gb</td>
+                <td class="body1">40Gb</td>
+            </tr>
+            <tr>
+                <td class="body2">Bandwith per month</td>
+                <td>120Gb</td>
+                <td class="body2">15GB</td>
+                <td>5GB</td>
+                <td class="body2">8GB</td>
+            </tr>
+            <tr>
+                <td class="body1">Email accounts</td>
+                <td class="body2">1</td>
+                <td class="body1">15</td>
+                <td class="body2">18</td>
+                <td class="body1">9</td>
+            </tr>
+            <tr>
+                <td class="body2"></td>
+                <td><button> Try it! </button></td>
+                <td class="body2"><button> Try it! </button></td>
+                <td><button> Try it! </button></td>
+                <td class="body2"><button> Try it! </button></td>
+            </tr>
+        </table>
+        <br>
+        <div class="container">
+            <div class="box">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, at sapiente? Sint veritatis quidem vitae!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, at sapiente? Sint veritatis quidem vitae!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, at sapiente? Sint veritatis quidem vitae!</p>
+            </div>
+        </div>
+        <br>
+        <div class="phoneContainer">
+            <div class="phoneBox">
+                <div class="camera"></div>
+                <div class="battery">31</div>
+                <div class="time">19:53</div>
+                <div class="date">Monday, May 31</div>
+                <div class="circle"></div>
+                <div class="slide">Slide up to unlock</div>
+                <img src="./iconfinder_photo_172519.svg" class="photo">
+            </div>
+        </div>
+    </div> -->
+
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">Writers</a>
+            <nav>
+                <ul>Lorem1
+                    <li>Lorem11</li>
+                    <li>Lorem12
+                        <ul>
+                            <li>Lorem121</li>
+                            <li>Lorem122</li>
+                        </ul>
+                    </li>
+                    <li>Lorem13</li>
+                </ul>
+                <ul>Lorem1</ul>
+                <ul>Books</ul>
+                <ul>Lorem3
+                    <li>Lorem21</li>
+                    <li>Lorem22</li>
+                    <li>Lorem23
+                        <ul>
+                            <li>Lorem221</li>
+                            <li>Lorem222</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="block0">
+            <h1>William Shakespeare</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est numquam ipsa itaque laboriosam aperiam
+                ad, deserunt vero. Doloremque fugiat veritatis nisi nesciunt maxime adipisci dolor harum doloribus alias
+                eos? Ducimus itaque aspernatur aperiam error laboriosam. Corrupti, modi dignissimos? Harum reprehenderit
+                similique dolor dignissimos autem omnis earum natus enim recusandae?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam aut quaerat praesentium.
+                Fugit ducimus provident perspiciatis natus temporibus modi quia eaque laudantium? Delectus accusamus ut
+                quod. Adipisci, praesentium commodi magni, omnis rerum culpa autem obcaecati aperiam sunt cum sit odit
+                asperiores! Illo qui suscipit perferendis nemo corporis sed tempore cumque, minima voluptatem harum!
+                Architecto cumque natus sit atque harum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nobis ut, voluptate repellendus
+                voluptates cum quo reprehenderit placeat sit quisquam, sint culpa nam? Modi rerum sint expedita
+                doloremque quis quae dicta accusamus, ratione corporis iste labore. Repellendus soluta praesentium fuga.
+            </p>
+        </div>
+        <div class="block1">
+            <div class="content">
+                <img src="../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tenetur architecto illum facere
+                    reiciendis dicta!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio labore optio quidem.
+                    Temporibus unde fuga, vel ex veniam, minus eaque beatae, assumenda maxime quas animi tempora. Harum,
+                    magni distinctio.
+                </p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">            
+            <img src="../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">            
+            <img src="../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">            
+            <img src="../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">            
+        </div>
+    </div>
+</body>
+
+</html>
