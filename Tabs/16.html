@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bylbas</title>
+
+    <style>
+        body{
+            background-image: url(../Content/Pictures/Beach.jpg);
+            background-size: cover;
+
+            font-size: 15pt;
+        }
+        form{
+            margin: auto;
+            margin-top: 10vh;
+            width: 80vw;
+
+            box-shadow: 0 0 40px black;
+
+            padding: 50px;
+
+            color: rgb(48, 48, 48);
+            font-weight: 800;
+        }
+        table{
+            width: 100%;
+            border-spacing: 30px 10px;
+        }
+        tr{
+            height: 40px;
+        }
+        tr>td:first-child{
+            width: 200px;
+        }
+        input, textarea{
+            height: 30px;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-size: 13pt;
+            padding: 5px;
+
+            cursor: pointer;
+        }
+        textarea{
+            height: 150px;
+        }
+        input::placeholder{
+            color: rgb(208, 208, 208);
+        }
+        .button{
+            border: solid snow;
+            font-size: 13pt;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(48, 48, 48);
+            display: block;
+        }
+        .button:hover{
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>
+            Contact form
+        </h2>
+        <p>
+            Please fill in your information and we`ll be sending your order.
+        </p>
+        <table>
+            <tr>
+                <td>Your name</td>
+                <td>
+                    <input type="text" placeholder="name">
+                </td>
+                <td>
+                    <input type="text" placeholder="surname">
+                </td>
+                <td>
+                    <input type="text" placeholder="patronymic">
+                </td>
+            </tr>
+            <tr>
+                <td>Your email</td>
+                <td colspan="3">
+                    <input type="email" placeholder="your_mail@mail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>Phone *</td>
+                <td><input type="text" placeholder="000" maxlength="3"></td>
+                <td><input type="text" placeholder="000" maxlength="3"></td>
+                <td><input type="text" placeholder="0000" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>Message subject *</td>
+                <td colspan="3">
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Message *</td>
+                <td colspan="3">
+                    <textarea>
+
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <a href="../index.html" class="button">
+                        SUBMIT FORM
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
