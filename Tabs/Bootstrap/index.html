@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-grid.css">
+
+    <title>Bylbas</title>
+
+    <style>
+        header {
+            line-height: 70px;
+            height: 70px;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        a,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none !important;
+            color: black !important;
+        }
+
+        input {
+            width: calc(100% - 70px);
+            height: 40px;
+            border: solid 1px rgb(191, 191, 191);
+            outline: none;
+        }
+
+        span {
+            display: block;
+            float: left;
+            background-color: rgb(201, 201, 201);
+            width: 50px;
+            height: 40px;
+            border: solid 1px rgb(191, 191, 191);
+        }
+
+        main div div:first-child>span {
+            background-image: url(./Content/search.svg);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        main div div:nth-child(2)>span {
+            background-image: url(./Content/location.svg);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        main>div>div:first-child {
+            background-color: rgb(169, 210, 242);
+        }
+
+        .filter {
+            filter: opacity(0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-light">
+        <div class="container">
+            <div class="row align-middle">
+                <div class="col">
+                    <a href="#">
+                        <img src="./Content/0.svg">
+                        AD`S BOARD
+                    </a>
+                </div>
+                <div class="col text-end">
+                    <button class="btn btn-warning">
+                        + New ad
+                    </button>
+                    <img src="./Content/1.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row mt-3 p-3">
+                <div class="col-5">
+                    <span></span>
+                    <input type="text" placeholder="11 999 345 ads near you">
+                </div>
+                <div class="col-5">
+                    <span></span>
+                    <input type="text" placeholder="Kiev, Kiev area">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100">Search</button>
+                </div>
+            </div>
+            <div class="row row-cols-4">
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+                <div class="col mt-3"><img src="./Content/1.svg"> Lorem, ipsum.</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <img src="./Content/0.svg" class="w-50 filter">
+                </div>
+                <div class="col">
+                    <div class="row">Lorem, ipsum.</div>
+                    <div class="row">Lorem, ipsum.</div>
+                    <div class="row">Lorem, ipsum.</div>
+                    <div class="row">Lorem, ipsum.</div>
+                    <div class="row">Lorem, ipsum.</div>
+                </div>
+                <div class="col">
+                    <div class="row">Lorem, ipsum dolor.</div>
+                    <div class="row">Lorem, ipsum dolor.</div>
+                    <div class="row">Lorem, ipsum dolor.</div>
+                    <div class="row">Lorem, ipsum dolor.</div>
+                    <div class="row">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="col">
+                    <div class="row">Lorem ipsum dolor sit.</div>
+                    <div class="row">Lorem ipsum dolor sit.</div>
+                    <div class="row">Lorem ipsum dolor sit.</div>
+                    <div class="row">Lorem ipsum dolor sit.</div>
+                    <div class="row">Lorem ipsum dolor sit.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
