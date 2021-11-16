@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Content/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Exam</title>
+
+    <style>
+        nav a:nth-child(4) {
+            color: white;
+            background-color: rgb(167, 23, 102);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <h2>Company</h2>
+        <hr>
+        <a href="../index.html"><img src="../Content/Pictures/Icons/dashboard_gray.svg">Dashboard</a>
+        <a href="../Tabs/account.html"><img src="../Content/Pictures/Icons/account_gray.svg">User Profile</a>
+        <a href=""><img src="../Content/Pictures/Icons/map_gray.svg">Maps</a>
+        <a href=""><img src="../Content/Pictures/Icons/notify_gray.svg">Notifications</a>
+        <a href=""><img src="../Content/Pictures/Icons/web.svg">Support</a>
+    </nav>
+
+    <main>
+        <h2><img src="./Content/Pictures/Icons/menu.png" id="menu">User Profile</h2>
+        <div class="form">
+            <div class="red">
+                <p>Edit Profile</p>
+                <p>Complete your profile</p>
+            </div>
+
+            
+        </div>
+        <div class="content">
+            <img src="../Content/Pictures/1.svg">
+            <p>Lucy Jackson</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus quidem, vitae dolores mollitia
+                accusamus natus harum, commodi incidunt tempore quis in. Necessitatibus, eaque expedita? Odit, ratione
+                repudiandae? Animi, quibusdam.</p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="">ABOUT</a>
+        <a href="">BLOG</a>
+        <a href="">LICENSES</a>
+
+        <span>
+            2019 - made with love
+        </span>
+    </footer>
+
+
+    <script>
+        document.querySelector('#menu').addEventListener('click', () => {
+            document.querySelector('nav').style.display = 'block';
+        });
+
+        document.querySelector('nav').onmouseout.style.display = 'none';
+    </script>
+</body>
+
+</html>
