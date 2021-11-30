@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../Content/style.css">
+    <link rel="shortcut icon" href="../Content/Pictures/js.ico" type="image/x-icon">
+    <script src="../Scripts/script.js"></script>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #252525;
+            color: #eee;
+        }
+        table{
+            width: max-content;
+            text-align: center;
+        }
+        tr:first-child{
+            background-color: #8e8e8e41;
+            cursor: pointer;
+        }
+        tr:first-child > td:hover{
+            transition: 0.3s;
+            background-color: #8e8e8e41;
+        }
+        tr:first-child td:first-child{
+            border-top-left-radius: 15px;
+        }
+        tr:first-child td:last-child{
+            border-top-right-radius: 15px;
+        }
+        td{
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .calendar{
+            width: 500px;
+            margin: 100px auto;
+            padding: 1rem;
+            box-shadow: 5px 5px 15px #eee;
+            border-radius: 5px;
+        }
+
+        label{
+            font-size: 20px;
+        }
+        input{
+            width: 100px;
+            padding: 0.5rem;
+            color: #eee;
+            border-radius: 5px;
+            border: 2px solid #eee;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .calendar > div{
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .calendar > div > div{
+            width: 65px;
+            height: 40px;
+            line-height: 40px;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+    </style>
+
+
+    <title>Bylbas</title>
+</head>
+
+<body id="load" onload="loadPage()">
+
+    <table>
+        <tbody>
+            <tr>
+                <td data-filter="firstName">firstName</td>
+                <td data-filter="lastName">lastName</td>
+                <td data-filter="age">age</td>
+                <td data-filter="company">company</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="calendar">
+        <label for="month">Enter month:</label>
+        <input type="text" id="month" value="01" minlength="2" maxlength="2" required>
+        <label for="year">Enter year:</label>
+        <input type="text" id="year" value="2001" minlength="4" maxlength="4" required>
+
+        <div>
+            <div>MON</div>
+            <div>TUE</div>
+            <div>WED</div>
+            <div>THU</div>
+            <div>FRI</div>
+            <div>SUT</div>
+            <div>SUN</div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="../Scripts/12js.js"></script>
+</body>
+
+</html>
