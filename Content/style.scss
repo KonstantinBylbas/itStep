@@ -8,6 +8,7 @@
 }
 
 body {
+  margin: 0;
   max-width: 100%;
   font-size: 13pt;
   opacity: 0;
@@ -278,50 +279,47 @@ figure {
   }
 }
 
-
-
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #252525;
+  width: 8px;
+  height: 8px;
+  background-color: #252525;
 }
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-    background-color: cyan;
-    border-radius: 9em;
-    transition: all 0.4s;
+  background-color: cyan;
+  border-radius: 9em;
+  transition: all 0.4s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: violet;
+  background-color: violet;
 }
 
 /* Стрелки */
 ::-webkit-scrollbar-button:vertical:start:decrement {
-    background: linear-gradient(120deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(240deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(0deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: cyan;
+  background: linear-gradient(120deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #252525 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: cyan;
 }
 
 ::-webkit-scrollbar-button:vertical:end:increment {
-    background: linear-gradient(300deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(60deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(180deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: cyan;
+  background: linear-gradient(300deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(60deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(180deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: cyan;
 }
 
 ::-webkit-scrollbar-button:horizontal:start:decrement {
-    background: linear-gradient(30deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(150deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(270deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: cyan;
+  background: linear-gradient(30deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(150deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(270deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: cyan;
 }
 
 ::-webkit-scrollbar-button:horizontal:end:increment {
-    background: linear-gradient(210deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(330deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(90deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: cyan;
+  background: linear-gradient(210deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(330deg, #252525 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(90deg, #252525 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: cyan;
 }
