@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../Content/Pictures/js.ico" type="image/x-icon">
+
+    <title>Konstantin Bylbas</title>
+
+    <style>
+        * {
+            color: #eee;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #252525;
+        }
+
+        .content {
+            width: 90vw;
+            height: 90vh;
+            margin: 5vh auto;
+            padding: 2rem;
+            position: relative;
+            border: solid 2px cyan;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px cyan;
+        }
+
+        input {
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            border: solid 2px cyan;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            border: solid 2px cyan;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+        }
+
+        .keyboard{
+            width: calc(100% - 4rem);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 2rem;
+        }
+
+        .coctails{
+            height: 80%;
+            margin: 1rem 0;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow-y: auto;
+        }
+
+        .coctails > div{
+            width: 30%;
+            margin: 0.5rem 0 0 0;
+            border: solid 2px violet;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .coctails > div > img{
+            width: 100%;
+        }
+
+        .coctails > div > p{
+            margin: 10px 0 10px 10px;
+        }
+
+        #load{
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #252525a6;
+        }
+        .lds-spinner {
+            color: official;
+            display: inline-block;
+            position: absolute;
+            top: calc(50vh - 40px);
+            left: calc(50vw - 40px);
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-spinner div {
+            transform-origin: 40px 40px;
+            animation: lds-spinner 1.2s linear infinite;
+        }
+
+        .lds-spinner div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 37px;
+            width: 6px;
+            height: 18px;
+            border-radius: 20%;
+            background: #fff;
+        }
+
+        .lds-spinner div:nth-child(1) {
+            transform: rotate(0deg);
+            animation-delay: -1.1s;
+        }
+
+        .lds-spinner div:nth-child(2) {
+            transform: rotate(30deg);
+            animation-delay: -1s;
+        }
+
+        .lds-spinner div:nth-child(3) {
+            transform: rotate(60deg);
+            animation-delay: -0.9s;
+        }
+
+        .lds-spinner div:nth-child(4) {
+            transform: rotate(90deg);
+            animation-delay: -0.8s;
+        }
+
+        .lds-spinner div:nth-child(5) {
+            transform: rotate(120deg);
+            animation-delay: -0.7s;
+        }
+
+        .lds-spinner div:nth-child(6) {
+            transform: rotate(150deg);
+            animation-delay: -0.6s;
+        }
+
+        .lds-spinner div:nth-child(7) {
+            transform: rotate(180deg);
+            animation-delay: -0.5s;
+        }
+
+        .lds-spinner div:nth-child(8) {
+            transform: rotate(210deg);
+            animation-delay: -0.4s;
+        }
+
+        .lds-spinner div:nth-child(9) {
+            transform: rotate(240deg);
+            animation-delay: -0.3s;
+        }
+
+        .lds-spinner div:nth-child(10) {
+            transform: rotate(270deg);
+            animation-delay: -0.2s;
+        }
+
+        .lds-spinner div:nth-child(11) {
+            transform: rotate(300deg);
+            animation-delay: -0.1s;
+        }
+
+        .lds-spinner div:nth-child(12) {
+            transform: rotate(330deg);
+            animation-delay: 0s;
+        }
+
+        @keyframes lds-spinner {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <input type="text" placeholder="Enter your query">
+        <button class="btn" id="search">search</button>
+
+        <div class="coctails"></div>
+
+        <div class="keyboard">
+            <button class="btn">A</button>
+            <button class="btn">B</button>
+            <button class="btn">C</button>
+            <button class="btn">D</button>
+            <button class="btn">E</button>
+            <button class="btn">F</button>
+            <button class="btn">G</button>
+            <button class="btn">H</button>
+            <button class="btn">I</button>
+            <button class="btn">J</button>
+            <button class="btn">K</button>
+            <button class="btn">L</button>
+            <button class="btn">M</button>
+            <button class="btn">N</button>
+            <button class="btn">O</button>
+            <button class="btn">P</button>
+            <button class="btn">Q</button>
+            <button class="btn">R</button>
+            <button class="btn">S</button>
+            <button class="btn">T</button>
+            <button class="btn">U</button>
+            <button class="btn">V</button>
+            <button class="btn">W</button>
+            <button class="btn">X</button>
+            <button class="btn">Y</button>
+            <button class="btn">Z</button>
+        </div>
+    </div>
+
+
+
+    <div id="load">
+        <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="../../Scripts/15.js"></script>
+</body>
+
+</html>

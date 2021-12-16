@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="../../Content/logo.png" type="image/x-icon">
+
+    <title>Konstantin Bylbas</title>
+
+    <style>
+        body{
+    width: 75vw;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+h2{
+    margin: 0 0 20px 0;
+}
+
+header{
+    font-size: 30pt;
+    width: max-content;
+    border: 3px dotted violet;
+}
+
+nav{
+    line-height: 30px;
+    margin-top: 20px;
+    border: solid 2px;
+    padding: 5px;
+}
+nav div{
+    font-size: 15pt;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav input{
+    margin: 3px;
+    height: 26px;
+    float: right;
+}
+
+main{
+    margin-top: 20px;
+    width: 50vw;
+    height: 800px;
+    border: solid 2px;
+    float: left;
+    padding: 20px;
+    overflow-y: auto;
+}
+.image{
+    background-color: rgb(160, 160, 160);
+    width: 100%;
+    height: 350px;
+}
+
+article div:first-child, article div:last-child{
+    margin: 20px 0 0 0;
+    width: 20vw;
+    height: 200px;
+    border: solid 2px;
+    float: right;
+}
+article div:last-child{
+    height: auto;
+}
+article div:last-child div{
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: calc(15vw / 4 - 50px);
+}
+article div:last-child div div{
+    border: solid 2px;
+    float: left;
+    width: calc(15vw / 4 + 5px);
+    height: calc(15vw / 4 + 5px);
+
+    margin: 0;
+    margin: 10px 0;
+}
+article div h2{
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px){
+    nav input{
+        position: absolute;
+        top: 30px;
+        right: 12.5vw;
+    }
+
+    article div:last-child div div{
+        border: solid 2px;
+        float: left;
+        width: calc(15vw / 2);
+        height: calc(15vw / 2);
+
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main, article div:last-child{
+        width: 75vw;
+    }
+
+    article div:first-child{
+        display: none;
+    }
+
+    article div:last-child div div{
+        border: solid 2px;
+        float: left;
+        width: calc(15vw / 2);
+        height: calc(15vw / 2);
+        margin: 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeInDownBig">
+        <a href="../../index.html">LOGO</a>
+    </header>
+
+    <nav class="animate__animated animate__fadeInDownBig">
+        <div>Home</div>
+        <div>About</div>
+        <div>Gallery</div>
+        <div>Contact</div>
+
+        <input type="search" placeholder="Search">
+    </nav>
+
+    <main class="animate__animated animate__fadeInLeftBig">
+        <h2>Lorem, ipsum dolor.</h2>
+        <div class="image"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut, recusandae quia, voluptatum qui explicabo
+            sequi id quae rem velit optio alias. Magnam, reiciendis rerum possimus atque laboriosam qui ipsam quo eius
+            fugiat. Voluptatibus repellendus suscipit, ipsam repudiandae rem, quos pariatur natus nisi numquam
+            accusantium nobis? Perspiciatis, odit ad quas voluptates modi similique amet rerum voluptate reiciendis
+            laboriosam rem debitis quia eaque ipsam sed hic assumenda. Quas, nulla. A nam nisi doloribus reiciendis, eos
+            ullam reprehenderit neque. Amet culpa rerum maxime dolores vero reprehenderit, libero, consectetur quisquam
+            enim saepe obcaecati voluptatibus eaque aspernatur ea illo nam sit provident sapiente hic esse sequi vel
+            tempora facilis? Sed rem nisi perspiciatis. Tempore, deleniti eveniet nemo consequuntur alias repudiandae
+            hic veritatis similique quia et est vel aspernatur? Aliquid provident quos omnis quae nihil. Distinctio,
+            nemo culpa? Voluptates nemo ipsum numquam saepe sint. Possimus ipsum fugit aliquid omnis, optio
+            necessitatibus molestiae tenetur blanditiis nemo expedita libero dolorum similique asperiores quas
+            voluptate. Esse, quasi et temporibus molestiae voluptas totam quisquam natus harum illo, debitis amet saepe
+            quod aperiam consectetur quaerat eveniet repudiandae corrupti, quibusdam iure quis nihil. Quis excepturi
+            amet autem sequi reiciendis enim. Culpa optio, dolore earum mollitia molestiae odio nobis? Aperiam, aliquid
+            ad.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta recusandae? Ea officia natus velit
+            iste nostrum, pariatur laudantium repellat unde quos nisi, neque suscipit, ipsam facere culpa adipisci nihil
+            perferendis obcaecati dolores repellendus veniam ducimus. Dolores enim, placeat incidunt saepe libero
+            explicabo sunt qui voluptatibus quod corrupti veniam. Perferendis eveniet, veritatis nam rerum natus
+            blanditiis ipsam iusto eligendi tempora. Aperiam laboriosam ratione voluptas assumenda tempora, quae illo
+            doloribus accusamus aspernatur harum voluptates sunt exercitationem, est molestiae optio eum nihil minima
+            consequuntur quia perferendis provident natus! Quam facere est ab facilis nam alias at, ea repellendus
+            explicabo quo unde eos, reiciendis error voluptas exercitationem ex eius minus. Exercitationem ut laboriosam
+            impedit qui delectus officia totam, sint soluta ducimus odio aspernatur labore modi ullam temporibus nulla
+            quas recusandae! Quidem natus, doloremque et obcaecati ullam maxime ea iste nesciunt reprehenderit,
+            recusandae repellat enim aut, corporis aperiam ut necessitatibus iure earum voluptas sit?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, cupiditate nemo facere eligendi dolores natus
+            sed tenetur labore porro totam, possimus reiciendis iusto vel! Ratione neque, debitis rem fuga, quaerat
+            vero, libero doloremque error provident officia quo vel aut alias consequatur soluta earum molestias?
+            Dignissimos, incidunt autem corporis maxime nemo ex voluptatem itaque sint temporibus recusandae fuga
+            perferendis cumque iure vitae ullam excepturi ducimus soluta neque quis hic ratione tempora deserunt
+            accusamus reiciendis! Non, laboriosam cumque? Atque asperiores maxime iste eligendi doloremque voluptates.
+            Magnam suscipit quam delectus deleniti blanditiis? Fugit veniam quod culpa, et mollitia hic adipisci tempore
+            libero officiis.
+        </p>
+    </main>
+
+    <article class="animate__animated animate__fadeInRightBig">
+        <div></div>
+        <div>
+            <h2>
+                Lorem
+            </h2>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

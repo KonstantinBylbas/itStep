@@ -9,6 +9,7 @@
 }
 
 body {
+  margin: 0;
   max-width: 100%;
   font-size: 13pt;
   opacity: 0;
@@ -118,15 +119,14 @@ a {
   font-size: 25px;
   font-weight: 700;
   margin: 4px 2px;
-  transition-duration: 0.4s;
+  transition: 0.3s;
   cursor: pointer;
 }
-.button:hover {
-  background-color: #707070;
-  color: white;
+.button.checked {
+  background-color: rgba(157, 157, 157, 0.3);
 }
-.button:hover > a {
-  color: white;
+.button:hover {
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .cards {
@@ -252,10 +252,6 @@ figure img {
 }
 .menu li:last-child::before {
   background-image: url(./Pictures/settings.png);
-}
-
-.checked {
-  background-color: #9d9d9d;
 }
 
 @media only screen and (max-width: 1400px) {

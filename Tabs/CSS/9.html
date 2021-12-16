@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../Content/logo.png" type="image/x-icon">
+    <script src="../../Scripts/script.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            width: 100vw;
+            height: 50px;
+            background-color: rgb(148, 61, 26);
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            cursor: pointer;
+            display: block;
+            color: #eeeeee;
+            font-size: 20pt;
+            font-weight: 600;
+            line-height: 50px;
+            padding: 0 20px;
+            float: left;
+        }
+
+        nav {
+            display: flex;
+            color: #eeeeee;
+            font-size: 15pt;
+        }
+
+        nav ul {
+            width: 110px;
+            margin: 0;
+            padding: 0;
+            line-height: 50px;
+            list-style: none;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+
+        nav ul li,
+        nav ul li ul {
+            position: relative;
+            width: 110px;
+            margin: 0 0 0 -20px;
+            padding: 0 20px;
+            display: none;
+        }
+
+        nav ul:hover li,
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            background-color: rgb(95, 42, 22);
+            top: 0;
+            left: calc(100% + 20px);
+            position: absolute;
+        }
+
+        nav ul:hover {
+            background-color: rgb(112, 49, 24);
+        }
+
+        nav ul li:hover {
+            background-color: rgb(95, 42, 22);
+        }
+
+        nav ul li ul:hover {
+            background-color: rgb(95, 42, 22);
+        }
+
+        nav ul li ul li:hover {
+            background-color: rgb(61, 28, 16);
+        }
+
+        .block0,
+        .block1,
+        .gallery {
+            float: left;
+            display: block;
+        }
+
+        .block0 {
+            width: 800px;
+        }
+
+        .block1 {
+            width: 400px;
+        }
+
+        .content {
+            border-radius: 3px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px 25px;
+            width: 300px;
+            background-color: rgb(200, 200, 200);
+        }
+
+        .content img {
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .gallery {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 0 0;
+            padding: 20px;
+            border: solid 1px;
+            border-radius: 3px;
+        }
+
+        .gallery img {
+            margin: 42px;
+            width: 200px;
+        }
+    </style>
+
+    <title>Konstantin Bylbas</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../../index.html" class="logo">Writers</a>
+            <nav>
+                <ul>Lorem1
+                    <li>Lorem11</li>
+                    <li>Lorem12
+                        <ul>
+                            <li>Lorem121</li>
+                            <li>Lorem122</li>
+                        </ul>
+                    </li>
+                    <li>Lorem13</li>
+                </ul>
+                <ul>Lorem1</ul>
+                <ul>Books</ul>
+                <ul>Lorem3
+                    <li>Lorem21</li>
+                    <li>Lorem22</li>
+                    <li>Lorem23
+                        <ul>
+                            <li>Lorem221</li>
+                            <li>Lorem222</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="block0">
+            <h1>William Shakespeare</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est numquam ipsa itaque laboriosam aperiam
+                ad, deserunt vero. Doloremque fugiat veritatis nisi nesciunt maxime adipisci dolor harum doloribus alias
+                eos? Ducimus itaque aspernatur aperiam error laboriosam. Corrupti, modi dignissimos? Harum reprehenderit
+                similique dolor dignissimos autem omnis earum natus enim recusandae?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam aut quaerat praesentium.
+                Fugit ducimus provident perspiciatis natus temporibus modi quia eaque laudantium? Delectus accusamus ut
+                quod. Adipisci, praesentium commodi magni, omnis rerum culpa autem obcaecati aperiam sunt cum sit odit
+                asperiores! Illo qui suscipit perferendis nemo corporis sed tempore cumque, minima voluptatem harum!
+                Architecto cumque natus sit atque harum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nobis ut, voluptate repellendus
+                voluptates cum quo reprehenderit placeat sit quisquam, sint culpa nam? Modi rerum sint expedita
+                doloremque quis quae dicta accusamus, ratione corporis iste labore. Repellendus soluta praesentium fuga.
+            </p>
+        </div>
+        <div class="block1">
+            <div class="content">
+                <img src="../../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tenetur architecto illum facere
+                    reiciendis dicta!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio labore optio quidem.
+                    Temporibus unde fuga, vel ex veniam, minus eaque beatae, assumenda maxime quas animi tempora. Harum,
+                    magni distinctio.
+                </p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="../../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+            <img src="../../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+            <img src="../../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+            <img src="../../Content/Pictures/colored-watercolor-spiral-nebula-galaxy-background_125540-465.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

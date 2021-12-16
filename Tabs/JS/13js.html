@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../Content/Pictures/js.ico" type="image/x-icon">
+
+    <title>Konstantin Bylbas</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        body {
+            margin: 0;
+            color: #eee;
+            background-color: #252525;
+        }
+        .content{
+            width: 1000px;
+            margin: auto;
+        }
+
+        button{
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: transparent;
+            border: solid 2px violet;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: 0.2s;
+            background-color: rgba(238, 130, 238, 0.1);
+        }
+        button:active{
+            position: relative;
+            top: 2px;
+        }
+
+        form{
+            width: max-content;
+            margin: 50px auto;
+            padding: 1rem 2rem;
+            border: solid 2px violet;
+            border-radius: 5px;
+
+        }
+
+        .block{
+            width: max-content;
+            padding: 0.5rem;
+            border: solid 1px violet;
+            border-radius: 5px;
+        }
+        .block:nth-child(even){
+            margin: 0.5rem 0 0 0;
+        }
+        
+        [name="v"]{
+            display: none;
+            width: auto;
+            text-align: right;
+        }
+
+        [name="v"] > div{
+            height: 115px;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 2px violet;
+            border-radius: 5px;
+        }
+
+        [name="v"] label, [name="v"] label + input{
+            cursor: pointer;
+        }
+
+        #price{
+            display: inline-block;
+            margin: 0 1rem 0 0;
+        }
+
+        table{
+            /* display: none; */
+            border: solid 2px violet;
+            border-radius: 5px;
+        }
+        tr:first-child td{
+            text-align: center;
+        }
+        td{
+            width: 333px;
+            padding: 0.5rem 1rem;
+            border-bottom: solid 2px violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <form name="f">
+            <div>
+                <label for="select">Direction: </label>
+                <select id="select">
+                    <option value="Lviv - Odessa">Lviv - Odessa</option>
+                    <option value="Odessa - Kyiv">Odessa - Kyiv</option>
+                    <option value="Lviv - Dnipro">Lviv - Dnipro</option>
+                </select>
+
+                <label for="date">Date: </label>
+                <input type="date" id="date">
+
+                <button id="search">
+                    Search
+                </button>
+            </div>
+        </form>
+
+        <form name="v">
+            <div>
+                <div class="block">
+                    <label for="checkbox1">1</label>
+                    <input type="checkbox" id="checkbox1">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <p for="book" id="price">Price: <span>0</span>$</p>
+            <button id="book">
+                Book
+            </button>
+        </form>
+
+        <h2>My tickets</h2>
+        <table>
+            <tr>
+                <td>Direction</td>
+                <td>Date</td>
+                <td>Seat</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="../../Scripts/13.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="../../Content/Pictures/js.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../Content/style.css">
+    <script src="../../Scripts/script.js"></script>
+
+    <style>
+        input{
+            padding: 0.5rem 1rem;
+            border: solid 2px #23d5ab;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .modal {
+            transition: 0.5s;
+            opacity: 0;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            left: 25%;
+            top: -100%;
+            box-shadow: 0 0 50px ;
+            background-color: #fff;
+            border: solid 2px #252525;
+            border-radius: 5px;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+        .show{
+            opacity: 1;
+            top: 20%;
+            z-index: 100;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #openBtn, #closeBtn, #nextBtn {
+            width: 120px;
+            text-align: center;
+            border: solid 2px;
+            border-radius: 5px;
+            padding: 0.5rem 2rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        #football{
+            width: 50vw;
+            margin: auto;
+            position: relative;
+        }
+
+        #field{
+            width: 100%;
+            cursor: pointer;
+        }
+
+        #ball{
+            transition: 1s;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+        }
+        #ball > img{
+            width: 50px;
+        }
+
+        #trafficLights{
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+        .color{
+            width: 50px;
+            height: 50px;
+            margin: 0.5rem;
+            border-radius: 50%;
+        }
+        .color:first-child{
+            background-color: rgb(255, 76, 76);
+            box-shadow: 0 0 15px red;
+        }
+        .color:nth-child(2){
+            background-color: rgb(255, 255, 76);
+            box-shadow: 0 0 15px yellow;
+        }
+        .color:last-child{
+            background-color: rgb(76, 255, 76);
+            box-shadow: 0 0 15px green;
+        }
+        .color.grey{
+            background-color: grey;
+            box-shadow: none;
+        }
+    </style>
+
+
+    <title>Konstantin Bylbas</title>
+</head>
+
+<body id="load" onload="loadPage()">
+
+    <input type="text" id="name" placeholder="Enter your name (any digits)">
+
+    <br/><br/>
+
+    <div id="openBtn">Открыть</div>
+    <div class="modal">
+        <p>
+            Hello from Modal Window!
+        </p>
+        <div id="closeBtn">Close</div>
+    </div>
+
+    <br/><br/>
+
+    <div id="football">
+        <img id="field" src="../../Content/Pictures/futbolnoe-pole-razmeryi-i-razmetka-standartyi-fifa-2019-2-418x315.jpg">
+        <div id="ball">
+            <img src="../../Content/Pictures/ball.png">
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div id="trafficLights">
+        <div class="color grey"></div>
+        <div class="color grey"></div>
+        <div class="color grey"></div>
+    </div>
+    <div id="nextBtn">START</div>
+
+
+    <script src="../../Scripts/9js.js"></script>
+</body>
+
+</html>
