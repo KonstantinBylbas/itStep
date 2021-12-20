@@ -16,8 +16,8 @@ body {
 }
 
 .linkedIn {
-  width: max-content;
-  height: max-content;
+  width: 250px;
+  height: 250px;
   position: fixed;
   right: -100%;
   top: 1rem;
@@ -25,7 +25,6 @@ body {
   transition: 0.3s;
 }
 .linkedIn iframe {
-  width: 100%;
   height: 100%;
 }
 .linkedIn.show {
