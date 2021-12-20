@@ -3,7 +3,7 @@ function loadPage() {
     document.getElementById('load').style.opacity = "1";
 }
 
-var status = 0;
+let status = 0;
 function triangle(){
     button = document.getElementById('triangle');
     text = document.getElementById('listBlock');
