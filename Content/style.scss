@@ -27,6 +27,19 @@ body {
     height: 100%;
   }
 
+  .close{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
   &.show{
     right: 0.5rem;
     opacity: 1;
@@ -284,6 +297,13 @@ figure {
   figure {
     width: 170px;
     height: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .button{
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem
   }
 }
 

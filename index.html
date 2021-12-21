@@ -55,20 +55,20 @@
                     DESIGN
                 </p>
                 <hr />
-                <a class="button checked" href="./Tabs/Design/1.html">1<sup>st</sup> Photoshop</a>
-                <a class="button checked" href="./Tabs/Design/2.html">2<sup>nd</sup> Photoshop</a>
-                <a class="button checked" href="./Tabs/Design/3.html">3<sup>rd</sup> Photoshop</a>
-                <a class="button checked" href="./Tabs/Design/4.html">4<sup>th</sup> Illustrator</a>
+                <a class="button checked" href="./Tabs/Design/1.html">1<sup>st</sup> Ph</a>
+                <a class="button checked" href="./Tabs/Design/2.html">2<sup>nd</sup> Ph</a>
+                <a class="button checked" href="./Tabs/Design/3.html">3<sup>rd</sup> Ph</a>
+                <a class="button checked" href="./Tabs/Design/4.html">4<sup>th</sup> Ill</a>
                 <a class="button checked"
                     href="https://www.figma.com/file/CbfPUlV5iBRbnwUsEEkz1i/LinkedIn-login">5<sup>th</sup>
-                    LinkedIn login (Figma)
+                    Figma
                 </a>
                 <a class="button checked"
-                    href="https://www.figma.com/file/YXTFcYmX3VHVwZVxYuCirZ/LP-Clocks">6<sup>th</sup> LP Clocks
-                    (Figma)
+                    href="https://www.figma.com/file/YXTFcYmX3VHVwZVxYuCirZ/LP-Clocks">6<sup>th</sup>
+                    Figma
                 </a>
                 <a class="button checked" href="https://www.figma.com/file/vpqdrdlj4tZErClD4O9gyQ/Player">7<sup>th</sup>
-                    Player (Figma)
+                    Figma
                 </a>
             </td>
         </tr>
@@ -140,13 +140,52 @@
     </table>
 
     <div class="linkedIn">
+        <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="enable-background:new 0 0 36 36;" version="1.1" viewBox="0 0 36 36" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #222A30;
+                    }
+
+                    .st1 {
+                        fill: none;
+                        stroke: #222A30;
+                        stroke-width: 2.0101;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st2 {
+                        fill: #171715;
+                    }
+
+                    .st3 {
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: #222A30;
+                    }
+                </style>
+                <g id="Layer_1" />
+                <g id="icons">
+                    <path class="st0"
+                        d="M6.2,3.5L3.5,6.2c-0.7,0.7-0.7,1.9,0,2.7l9.2,9.2l-9.2,9.2c-0.7,0.7-0.7,1.9,0,2.7l2.6,2.6   c0.7,0.7,1.9,0.7,2.7,0l9.2-9.2l9.2,9.2c0.7,0.7,1.9,0.7,2.7,0l2.6-2.6c0.7-0.7,0.7-1.9,0-2.7L23.3,18l9.2-9.2   c0.7-0.7,0.7-1.9,0-2.7l-2.6-2.6c-0.7-0.7-1.9-0.7-2.7,0L18,12.7L8.8,3.5C8.1,2.8,6.9,2.8,6.2,3.5z"
+                        id="close_1_" />
+                </g>
+            </svg>
+        </div>
         <iframe src="./Content/profile.html" frameborder="0"></iframe>
     </div>
 
     <script>
+        let linkedIn = document.querySelector('.linkedIn');
         setTimeout(() => {
-            document.querySelector('.linkedIn').classList.add('show');
-        }, 2000);
+            linkedIn.classList.add('show');
+        }, 4000);
+
+        document.querySelector('.close').addEventListener('click', () => {
+            linkedIn.classList.remove('show');
+        })
     </script>
 </body>
 

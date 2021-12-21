@@ -27,6 +27,17 @@ body {
 .linkedIn iframe {
   height: 100%;
 }
+.linkedIn .close {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.linkedIn .close:hover {
+  opacity: 0.8;
+}
 .linkedIn.show {
   right: 0.5rem;
   opacity: 1;
@@ -279,6 +290,12 @@ figure img {
   figure {
     width: 170px;
     height: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .button {
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 600px) {
