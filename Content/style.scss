@@ -14,6 +14,11 @@ body {
   opacity: 0;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+}
+
 .linkedIn {
   width: 250px;
   height: 250px;
@@ -23,11 +28,11 @@ body {
   opacity: 0;
   transition: 0.3s;
 
-  iframe{
+  iframe {
     height: 110%;
   }
 
-  .close{
+  .close {
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
@@ -35,12 +40,12 @@ body {
     transition: 0.3s;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       opacity: 0.8;
     }
   }
 
-  &.show{
+  &.show {
     right: 0.5rem;
     opacity: 1;
   }
@@ -290,7 +295,8 @@ figure {
 }
 
 @media only screen and (max-width: 1400px) {
-  table {
+  table,
+  .container {
     width: 85vw;
   }
 
@@ -301,28 +307,29 @@ figure {
 }
 
 @media only screen and (max-width: 800px) {
-  .button{
+  .button {
     padding: 0.5rem 0.7rem;
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  table {
+  table,
+  .container {
     width: 95vw;
   }
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 0.8rem;
+  height: 0.8rem;
   background-color: #252525;
 }
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
   background-color: cyan;
-  border-radius: 9em;
+  border-radius: 0.2rem;
   transition: all 0.4s;
 }
 
